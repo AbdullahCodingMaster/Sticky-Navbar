@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  /* font-size: 62.5%; */
+  line-height: 1.5;
+  height: 100vh;
+}
+
+.nav__bar {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0px 4px 8px rgba(43, 43, 44, 0.3);
+  transition: background-color 0.6s;
+}
+
+.nav__bar .logo {
+  text-decoration: none;
+  color: red;
+  font-weight: 600;
+  font-family: cursive;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.items {
+  display: flex;
+  /* margin: 1rem; */
+}
+
+.item {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.item a {
+  text-decoration: none;
+  color: black;
+  font-family: cursive;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.item a:hover {
+  color: red;
+}
+
+.hero--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url(coding.webp);
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  font-family: cursive;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+.text {
+  margin: 3rem 2.5rem;
+  font-family: sans-serif;
+  text-align: justify;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.03rem;
+}
+
+.active {
+  background-color: black;
+}
+.active .items .item a {
+  color: white;
+}
+
+.active .items .item a:hover {
+  color: red;
+}
